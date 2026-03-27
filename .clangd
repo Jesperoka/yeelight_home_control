@@ -1,0 +1,25 @@
+CompileFlags:
+
+  Compiler: g++-13
+
+  Add: [
+    -std=c++23,
+    -fno-delayed-template-parsing,
+    -Werror=implicit-fallthrough=5,
+    -Werror=switch-enum,
+    -Werror=unused,
+    -Werror=misleading-indentation,
+    -Werror=unknown-pragmas,
+    -Werror=float-equal,
+    -I .,
+    -I c232hm-ddhsl-0-usb-to-mpsse-serial-cable/link_me,
+    -L c232hm-ddhsl-0-usb-to-mpsse-serial-cable/link_me/libftd2xx.a,
+    -lpthread,
+    -lrt,
+    -ldl,
+    # Because Clang/Clangd haven't implemented getting predefined macro values from GCC with --query-driver
+    # -D__GNUC__=9,
+    # -D__GNUC_MINOR__=4,
+    # -D__GNUC_PATCHLEVEL__=0,
+  ]
+

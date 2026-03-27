@@ -25,4 +25,4 @@ if __name__ == "__main__":
     }
 
     for name, bulb in bulb_dict.items():
-        set_rgba(bulb, 0, 0, 255, 1)
+        set_rgba(bulb, 255, 0, 0, 1)

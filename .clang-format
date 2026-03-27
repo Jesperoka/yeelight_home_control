@@ -1,0 +1,47 @@
+IndentWidth: 4
+ColumnLimit: 180
+
+---
+Language: Cpp
+
+DerivePointerAlignment: false
+PointerAlignment: Left
+
+AlignEscapedNewlines: Left
+AllowShortFunctionsOnASingleLine: All
+AlignAfterOpenBracket: BlockIndent
+BinPackArguments: false
+BinPackParameters: false
+AllowAllArgumentsOnNextLine: false
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLambdasOnASingleLine: All
+AllowShortBlocksOnASingleLine: true
+AlwaysBreakTemplateDeclarations: true
+
+# This one is a little annoying, but it's worth it for codebases with many (critical) constants I think.
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  PadOperators: false
+  AlignCompound: false
+
+AllowShortCaseLabelsOnASingleLine: true
+AlignConsecutiveShortCaseStatements: # Only relevant if the above is true.
+      Enabled: true
+      AcrossEmptyLines: false
+      AcrossComments: false
+      AlignCaseColons: false
+
+MaxEmptyLinesToKeep: 2
+
+AlignConsecutiveBitFields: true
+
+BraceWrapping: {
+  AfterControlStatement: true,
+  AfterCaseLabel: false
+}
+
+PenaltyBreakComment: 10000000
+ReflowComments: false
+
