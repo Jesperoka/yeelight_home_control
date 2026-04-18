@@ -12,8 +12,6 @@ CompileFlags:
     -Werror=unknown-pragmas,
     -Werror=float-equal,
     -I .,
-    -I c232hm-ddhsl-0-usb-to-mpsse-serial-cable/link_me,
-    -L c232hm-ddhsl-0-usb-to-mpsse-serial-cable/link_me/libftd2xx.a,
     -lpthread,
     -lrt,
     -ldl,
